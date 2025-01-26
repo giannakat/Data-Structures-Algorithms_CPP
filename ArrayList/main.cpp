@@ -18,7 +18,13 @@ int main(){
                 break;
             case 'A':
                 cin >> num >> pos;
-                myArray->addAt(num, pos);
+                try {
+                    myArray->addAt(num, pos);
+    
+                    } catch (logic_error e) {
+                        cout << "Error: " << e.what() << endl;
+                    }
+                
                 break;
             case 'r':
                 cin >> num;
@@ -28,8 +34,15 @@ int main(){
                 }
                 break;
             case 'R':
-                cin >> num >> pos;
-                cout << "Removed " << myArray->removeAt(pos) << "from the list" << endl;
+                cin >> pos;
+
+                try {
+                    cout << "Removed " << myArray->removeAt(pos) << "from the list" << endl;
+                    
+                    } catch (logic_error e) {
+                        cout << "Error: " << e.what() << endl;
+                    }
+                
                 break;
             case 'p':
                 myArray->print();
@@ -38,9 +51,9 @@ int main(){
                 cout << "size: " << myArray->size_() << endl;
                 break;
             case 'x':
-                cout << "Exiting";
+                cout << "Exiting" << endl;
                 break;
-                
+        
             default:
                 cout << "Invalid operation! " << endl;
         }

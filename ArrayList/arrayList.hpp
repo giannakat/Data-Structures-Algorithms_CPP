@@ -79,6 +79,8 @@ class ArrayList : public List{
         for(; i < capacity; i++){
             cout << "? ";
         }
+
+        cout << endl;
     }
 
     // void addAt(int num, int pos){
