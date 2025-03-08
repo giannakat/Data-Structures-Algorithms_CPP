@@ -1,0 +1,17 @@
+Given the Stack ADT, implement a stack using the both data structures -- arrays and singly linked list. Here are the methods' expected behavior:
+
+void push(int) - Adds the integer at the top element of the stack. On arrays, start with the capacity of 5 and maintain this as minimum capacity. If the stack is full, dynamically increase its capacity to 50% more (rounded up).
+int pop() - Pops the top element from the stack and returns it. If there does not exist an element to be popped, this shall throw an error with the message "Cannot remove from empty stack". On arrays, when the number of elements reach two-thirds (rounded down) of the capacity, reduce the capacity of the array to 75% (rounded up). On linked lists, remember to deallocate the node upon removing it.
+int top() - Returns the top element without removing it. If there does not exist an element, this shall throw an error with the message "Cannot retrieve from empty stack".
+int size() and bool isEmpty() should be self-explanatory.
+ 
+
+After checking all the testcases, answer the guide questions on a 1/2 crosswise sheet of paper.
+
+ 
+
+Which data structure is faster in implementing the push() method? Explain in terms of running time T(n).
+Which data structure is faster in implementing the pop() method? Explain in terms of running time T(n).
+Which data structure is faster in implementing the top() method? Explain in terms of running time T(n).
+What is the best-case running time of push() in the array implementation? How about pop()?
+Do you think it is wise to make the array static to always get the best-case running time? Justify.
