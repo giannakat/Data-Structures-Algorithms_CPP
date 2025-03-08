@@ -47,6 +47,7 @@ class ArrayListStack : public Stack{
             throw logic_error("Cannot remove from empty stack");
         }
         int temp = array[_size-1];
+        array[_size-1] = 0;
         _size--;
         decreaseCap();
 
