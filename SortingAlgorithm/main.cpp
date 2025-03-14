@@ -1,5 +1,5 @@
 #include <iostream>
-#include "BubbleSort.hpp"
+#include "InsertionSort.hpp"
 using namespace std;
 
 int main(){
@@ -22,7 +22,7 @@ int main(){
 
    cout << endl;
 
-   Sortable* sorter = new BubbleSort();
+   Sortable* sorter = new InsertionSort();
    sorter->sort(arr, s);
 
    cout << "Sorted elements: " << endl;
