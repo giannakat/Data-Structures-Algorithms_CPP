@@ -1,5 +1,5 @@
 #include <iostream>
-#include "InsertionSort.hpp"
+#include "CountingSort.hpp"
 using namespace std;
 
 int main(){
@@ -22,7 +22,7 @@ int main(){
 
    cout << endl;
 
-   Sortable* sorter = new InsertionSort();
+   Sortable* sorter = new CountingSort();
    sorter->sort(arr, s);
 
    cout << "Sorted elements: " << endl;
