@@ -9,6 +9,8 @@ struct Node {
     int height;
     
     Node(int val) : key(val), left(nullptr), right(nullptr), height(1) {}
+
+    int Height()
 };
 
 // Function to get the height of a node
